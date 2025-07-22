@@ -23,7 +23,7 @@ testlet();
 function testconst() {
     const z = 10;
     if (true) {
-        // const z = 20; // This would cause an error
+         const z = 20; 
         console.log(z); // 10
     }
     console.log(z); // 10
