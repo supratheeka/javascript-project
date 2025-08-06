@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        // Object creation
+        //nested object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            person1:{
+                name:"srika",
+                age: 30,
+                city: "Hyderabad"
+            },
+            // function inside a function
+            //in bellow example just use fun() and also fun is a property of object
+            fun:function function1() {
+                console.log("This is a function inside an object");
+            }
+        };
+        console.log(person.person1.name)
+        person.fun();
+        console.log(person);
+        //adding property into object
+        person.job = "Developer";
+        console.log(person.job);
+        //using bracket notation
+        console.log(person['name']);
+        person[age]=31;
+        console.log(person['age']);
+        console.log(person[date-of-birth]);
+        
+        
+        //deleting property from object
+        delete person.job;
+        console.log(person.job); 
+
+
+        // Accessing object properties
+        console.log(`Name: ${person.name}`);
+        console.log(`Age: ${person.age}`);
+        console.log(`City: ${person.city}`);
+
+        // Adding a new property
+        person.country = "USA";
+        console.log(`Country: ${person.country}`);
+
+        // Modifying an existing property
+        person.age = 31;
+        console.log(`Updated Age: ${person.age}`);
+
+        // Deleting a property
+        delete person.city;
+        console.log(`City after deletion: ${person.city}`);
+
+        // Looping through object properties
+        for (const key in person) {
+            console.log(`${key}: ${person[key]}`);
+        }
+    </script>
+    
+</body>
+</html>

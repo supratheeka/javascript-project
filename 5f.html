@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5f solution</title>
+    </head>
+    <body>
+        <script>
+            const cost=5+2*3+9;
+            console.log(`The cost is $${cost}`);
+            const tax=cost*0.1;
+            
+            console.log(`tax(10%):$${tax}`);
+            const totalCost = cost + tax;
+            console.log(`Total cost: $${totalCost}`);
+            //ternary operator
+            const variable1=true? 'truthy' : 'falsey';
+            console.log(variable1);
+            //guard operator
+            const variable2=5 && 'default value'
+            console.log(variable2);
+            3&& console.log('This will run if 3 is truthy');
+            //default operator
+            const currency=0|| 'USD';
+
+            console.log(currency);
+            </script>
+    </body>
+</html>

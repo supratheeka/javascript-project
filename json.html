@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>JSON object</title>
+</head>
+
+<body>
+<script>
+    // JSON object example
+    const person={
+        name: "John",
+        age: 30,
+        city: "New York",
+        person1:{
+            name:"srika",
+            age: 30,
+            city: "Hyderabad",
+            fun() {
+                console.log("This is a function inside an object");
+            },
+        },
+    };
+     person.person1.fun(); 
+
+    console.log( typeof JSON.stringify(person));
+    const jsonString = JSON.stringify(person);
+    console.log(JSON.parse((jsonString))); 
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+
+
+
+function function1(){
+    console.log("This is a function");
+
+}
+function1();
+// Function with parameters
+function function2(param1, param2) {
+    console.log(`Parameters received: ${param1}, ${param2}`);
+}   
+function2("Hello", "World");
+// Function returning a value 
+
+console.log(5,10);
+function function3(a,b) {
+    return a + b;
+}
+let sum=function3(10,20);
+console.log(sum);
+// Function with default parameters
+function function4(a, b = 5) {
+    return a + b;
+}
+console.log(function4(10)); 
+// Arrow function
+const function5 = (a, b) => a + b;
+console.log(function5(10, 20));
+
+let funcode=name=>`hello,${name}`;
+console.log(funcode("srika"));
+</script>
+</body> 
+</html>
